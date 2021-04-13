@@ -1,5 +1,5 @@
 <template>
   <div class="text-5xl">
-    <h1>About page</h1>
+    <h1>Projects page</h1>
   </div>
 </template>

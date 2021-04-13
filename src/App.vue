@@ -1,6 +1,12 @@
 <template>  
-  <Nav />
-  <router-view/>
+  <div id="app">
+    <Nav />
+    <div class="absolute flex w-full justify-center mt-52">
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -24,6 +30,7 @@ export default{
   color: #2c3e50;
 }
 
+
 #nav {
   padding: 30px;
 }
@@ -36,4 +43,15 @@ export default{
 #nav a.router-link-exact-active {
   color: #42b983;
 } */
+#app {
+  overflow: hidden;
+  width: 100vw;
+}
+.fade-enter-from, fade-leave-to {
+  opacity: 0;
+  transform: translateX(2em);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s ease;
+}
 </style>

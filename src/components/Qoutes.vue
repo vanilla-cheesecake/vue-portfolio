@@ -1,14 +1,9 @@
 <template>
     <div>
-        <h2>QOUTES</h2>
-
-
-
-
-        <div v-for="qoutes in qoutesList" v-bind:key="qoutes.id">
+        <!-- <div v-for="qoutes in qoutesList" v-bind:key="qoutes.id">
             <p>Qoute: <i>{{ qoutes.text }}</i></p>
             <p>Author: {{ qoutes.author }}</p>
-        </div>
+        </div> -->
  
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="text-5xl">
     <h1>Homepage</h1>
     <qoutes></qoutes>
   </div>
@@ -11,7 +11,6 @@
 import Qoutes from '../components/Qoutes'
 
 export default {
-  name: "Home",
   components: {
     'qoutes': Qoutes
   }
