@@ -6,7 +6,7 @@
             <router-link to="/" class="m-3">Home</router-link> 
             <router-link to="/my-projects" class="m-3">My Projects</router-link>
             <router-link to="/about" class="m-3">About</router-link>
-             <router-link to="/contact-me" class="m-3">Contact me</router-link>
+            <router-link to="/contact-me" class="m-3">Contact me</router-link>
           </ul>
         </nav>
       </div>
