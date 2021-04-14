@@ -1,6 +1,6 @@
 <template>
     <div id="nav">
-      <div class="fixed justify-between left-0 right-0">
+      <div class="relative fixed justify-between left-0 right-0">
         <nav class="flex items-center text-xl bg-transparent p-6 w-full relative">
           <ul class="flex justify-end flex-1 items-center block pt-1 pt-0 pl-2">
             <router-link to="/" class="m-3">Home</router-link> 

@@ -1,7 +1,9 @@
 <template>
-  <div class="text-5xl">
-    <h1>Homepage</h1>
-    <!-- <qoutes></qoutes> -->
+  <div class="container flex">
+    <div class="text-5xl mt-48 ">
+      <h1>Homepage</h1>
+      <!-- <qoutes></qoutes> -->
+    </div>
   </div>
 </template>
 

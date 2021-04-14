@@ -1,7 +1,7 @@
 <template>  
  
   <div id="app">
-    <!-- <transition name="fade" :duration="{ enter: 500, leave: 800 }"> -->
+    <transition name="boo" mode="in-out" :duration="{ enter: 500, leave: 800 }">
         <div v-if="showComponent">
             <div class="absolute fixed bg-cover" >
                 <img src="../src/assets/intro.jpg" alt="">
@@ -9,9 +9,9 @@
             <div class="absolute w-full">
              
                 <div class="flex text-white text-9xl mt-48 justify-center"> 
-                   <transition name="fade" mode="out-in">  
+                  <transition name="fade" mode="in-out">  
                     <h1>GOLEZ LLOYD</h1> 
-                            </transition>
+                  </transition>
                 </div>  
     
               <div class="flex mt-52 justify-center">
@@ -19,12 +19,12 @@
               </div>
             </div>
         </div>
-    <!-- </transition> -->
+    </transition>
 
     <div class="" v-if="!showComponent">
       <Nav />
         <div class="relative flex w-full justify-center">
-          <div class="">
+          <div class="mb-6">
             <transition name="fade" mode="out-in">
               <router-view/>
             </transition>       
@@ -87,12 +87,19 @@ export default{
 
 }
 
-.fade-enter-from, fade-leave-to {
+.fade-enter-from, .fade-leave-to {
   opacity: 0;
   transform: translateX(2em);
 }
 .fade-enter-active, .fade-leave-active {
-  transition: all .3s ease;
+  transition: opacity 0.5s;
 }
-
+.boo-enter-active,
+.boo-leave-active {
+  transition: opacity 0.5s;
+}
+.boo-enter,
+.boo-leave-to {
+  opacity: 0;
+}
 </style>
