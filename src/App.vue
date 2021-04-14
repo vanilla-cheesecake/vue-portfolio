@@ -1,29 +1,53 @@
 <template>  
  
-
   <div id="app">
-  <div class="">
-    <Nav />
-      <div class="absolute flex w-full justify-center mt-52">
-        <transition name="fade" mode="out-in">
-          <router-view/>
-        </transition>       
-      </div>
-  </div>
-  </div>
-      <Intro/>
-</template>
+    <!-- <transition name="fade" :duration="{ enter: 500, leave: 800 }"> -->
+        <div v-if="showComponent">
+            <div class="absolute fixed bg-cover" >
+                <img src="../src/assets/intro.jpg" alt="">
+            </div>
+            <div class="absolute w-full">
+             
+                <div class="flex text-white text-9xl mt-48 justify-center"> 
+                   <transition name="fade" mode="out-in">  
+                    <h1>GOLEZ LLOYD</h1> 
+                            </transition>
+                </div>  
+    
+              <div class="flex mt-52 justify-center">
+                <button v-on:click="showComponent = !showComponent" class="transition bg-white ease-out hover:bg-gray-900 hover:text-white hover:border-0 bg-teal-400 p-4 px-12 border rounded inline-block cursor-pointer">View Portfolio</button>
+              </div>
+            </div>
+        </div>
+    <!-- </transition> -->
 
+    <div class="" v-if="!showComponent">
+      <Nav />
+        <div class="relative flex w-full justify-center">
+          <div class="">
+            <transition name="fade" mode="out-in">
+              <router-view/>
+            </transition>       
+          </div>
+        </div>
+    </div>
+  </div>
+   
+</template>
+      
 <script>
 import Nav from './components/Nav'
-import Intro from './components/Intro'
 
 export default{
   name: 'App',
   components: { 
-    Nav, 
-    Intro
+    Nav
   },
+   data: () => {
+        return {
+            showComponent: true,
+        }
+    },
  
   
 }

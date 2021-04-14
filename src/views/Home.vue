@@ -1,7 +1,7 @@
 <template>
   <div class="text-5xl">
     <h1>Homepage</h1>
-    <qoutes></qoutes>
+    <!-- <qoutes></qoutes> -->
   </div>
 </template>
 
