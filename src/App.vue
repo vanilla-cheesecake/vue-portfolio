@@ -1,42 +1,48 @@
 <template>  
- 
-  <div id="app">
-    <transition name="boo" mode="in-out" :duration="{ enter: 500, leave: 800 }">
-        <div v-if="showComponent">
-            <div class="absolute fixed bg-cover" >
-                <img src="../src/assets/intro.jpg" alt="">
-            </div>
-            <div class="absolute w-full">
-             
-                <div class="flex text-white text-9xl mt-48 justify-center"> 
-                  <transition name="fade" mode="in-out">  
-                    <h1>GOLEZ LLOYD</h1> 
-                  </transition>
-                </div>  
-    
-              <div class="flex mt-52 justify-center">
-                <button v-on:click="showComponent = !showComponent" class="transition bg-white ease-out hover:bg-gray-900 hover:text-white hover:border-0 bg-teal-400 p-4 px-12 border rounded inline-block cursor-pointer">View Portfolio</button>
-              </div>
-            </div>
-        </div>
-    </transition>
 
-    <div class="" v-if="!showComponent">
-      <Nav />
-        <div class="relative flex w-full justify-center">
-          <div class="mb-6">
-            <transition name="fade" mode="out-in">
-              <router-view/>
-            </transition>       
+
+      
+    <div class="app">
+      <!-- <transition name="boo" mode="in-out">
+          <div v-if="showComponent">
+
+              <div class="absolute fixed bg-cover" >
+                  <img src="../src/assets/intro.jpg" alt="">
+              </div>
+
+              <div class="absolute w-full">
+                  <div class="flex text-white text-9xl mt-48 justify-center"> 
+                    <transition name="fade" mode="in-out">  
+                      <h1>GOLEZ LLOYD</h1> 
+                    </transition>
+              </div>  
+      
+                <div class="flex mt-52 justify-center">
+                  <button v-on:click="showComponent = !showComponent" class="transition bg-white ease-out hover:bg-gray-900 hover:text-white hover:border-0 bg-teal-400 p-4 px-12 border rounded inline-block cursor-pointer">View Portfolio</button>
+                </div>
+              </div>
           </div>
-        </div>
+      </transition> -->
+      <transition name="fade" mode="out-in">
+      <div class="" v-if="showComponent">
+        <Nav />
+          <div class="relative flex w-full justify-center">
+            <div class="mb-6">
+              <transition name="fade" mode="out-in">
+                <router-view></router-view>
+              </transition>      
+            </div>
+          </div>
+      </div>
+         </transition>
     </div>
-  </div>
+   
    
 </template>
       
 <script>
 import Nav from './components/Nav'
+
 
 export default{
   name: 'App',
@@ -47,9 +53,7 @@ export default{
         return {
             showComponent: true,
         }
-    },
- 
-  
+  },
 }
 
 </script>

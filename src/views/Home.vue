@@ -1,17 +1,21 @@
 <template>
-  <div class="container flex">
-    <div class="text-5xl mt-48 ">
-      <h1>Homepage</h1>
-      <!-- <qoutes></qoutes> -->
+  <div class="container max-width mx-auto">
+    <div class="">
+      <h1 class="text-5xl">Homepage</h1>
     </div>
   </div>
+  <!-- <div class="container max-width mx-auto">
+    <div class="">
+      <h1 class="text-5xl">Homepage</h1>
+    </div>
+  </div> -->
 </template>
+
 
 
 
 <script>
 import Qoutes from '../components/Qoutes'
-
 export default {
   components: {
     'qoutes': Qoutes
