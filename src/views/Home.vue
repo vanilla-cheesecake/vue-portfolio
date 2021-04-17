@@ -4,6 +4,7 @@
       <h1 class="text-5xl">Homepage</h1>
     </div>
   </div>
+  <!-- <qoutes /> -->
   <!-- <div class="container max-width mx-auto">
     <div class="">
       <h1 class="text-5xl">Homepage</h1>
@@ -19,6 +20,7 @@ import Qoutes from '../components/Qoutes'
 export default {
   components: {
     'qoutes': Qoutes
-  }
+  },
+  
 }
 </script>
