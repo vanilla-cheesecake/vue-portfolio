@@ -1,6 +1,6 @@
 <template>  
     <div class="app">
-      <transition name="boo" mode="in-out">
+      <!-- <transition name="boo" mode="in-out">
           <div v-if="showComponent">
               <div class="absolute fixed bg-cover" >
                   <img src="../src/assets/intro.jpg" alt=""> 
@@ -16,22 +16,22 @@
                 </div>
               </div>
           </div>
-      </transition>
-      <transition name="fade" mode="out-in">
-      <div class="" v-if="!showComponent">
+      </transition> -->
+      
+      <!-- <div class="" v-if="showComponent"> -->
           <!-- <div class="absolute bg-cover">
             <img src="../src/assets/bg3.png" alt="">
           </div> -->
         <Nav />
-          <div class="relative flex w-full justify-center">
-            <div class="mb-6">
-              <transition name="fade" mode="out-in">
+          <!-- <div class="relative flex w-full justify-center"> -->
+            <!-- <div class="mb-6"> -->
+
                 <router-view></router-view>
-              </transition>      
-              </div>
-            </div>
-        </div>
-          </transition>
+    
+              <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+     
 
     </div>
 </template>
