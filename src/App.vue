@@ -1,59 +1,23 @@
 <template>  
     <div class="app">
-      <!-- <transition name="boo" mode="in-out">
-          <div v-if="showComponent">
-              <div class="absolute fixed bg-cover" >
-                  <img src="../src/assets/intro.jpg" alt=""> 
-              </div>
-              <div class="absolute w-full">
-                  <div class="flex text-white text-9xl mt-48 justify-center"> 
-                    <transition name="fade" mode="in-out">  
-                      <h1>GOLEZ</h1>
-                    </transition>
-              </div>    
-                <div class="flex mt-52 justify-center">
-                  <button v-on:click="showComponent = !showComponent" class="transition hover:bg-white hover:text-black bg-transparent ease-out text-white bg-teal-400 p-4 px-12 border rounded inline-block cursor-pointer">View Portfolio</button>
-                </div>
-              </div>
-          </div>
-      </transition> -->
-      
-      <!-- <div class="" v-if="showComponent"> -->
-          <!-- <div class="absolute bg-cover">
-            <img src="../src/assets/bg3.png" alt="">
-          </div> -->
         <Nav />
-          <!-- <div class="relative flex w-full justify-center"> -->
-            <!-- <div class="mb-6"> -->
-
-                <router-view></router-view>
-    
-              <!-- </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-     
-
+        <transition 
+            mode="in-out"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut">
+          <router-view />
+        </transition>
     </div>
 </template>
       
 <script>
 import Nav from './components/Nav'
 
-
 export default{
   name: 'App',
   components: { 
     Nav
-  },
-   data: () => {
-    return {
-        showComponent: true,
-        backgroundImage: ''
-    }
-
-    
-  
-  },
+  }
 }
 
   </script>
@@ -88,21 +52,5 @@ export default{
   overflow: hidden;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-  transform: translateX(2em);
-}
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-.boo-enter-active,
-.boo-leave-active {
-  transition: opacity 0.5s;
-}
-.boo-enter,
-.boo-leave-to {
-  opacity: 0;
 }
 </style>

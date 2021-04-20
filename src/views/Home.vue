@@ -1,18 +1,12 @@
 <template>
 
-  <section class="flex mx-auto justify-center">
+  <section class="relative flex mx-auto justify-center m-3">
         <h1 class="text-5xl">Homepage</h1>
   </section>
 
-  <!-- <qoutes /> -->
-  <!-- <div class="container max-width mx-auto">
-    <div class="">
-      <h1 class="text-5xl">Homepage</h1>
-    </div>
-  </div> -->
-  <section class="flex mx-auto justify-center items-center flex-col mt-12">
+  <!-- <section class="relative flex mx-auto justify-center items-center flex-col mt-12">
     <qoutes />
-  </section>
+  </section> -->
 
 </template>
 
