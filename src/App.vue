@@ -1,26 +1,26 @@
-<template>  
-    <div class="app">
-        <Nav />
-        <transition 
-            mode="out-in"
-            enter-active-class="animate__animated animate__fadeIn"
-            leave-active-class="animate__animated animate__fadeOut">
-          <router-view />
-        </transition>
-    </div>
+<template>
+  <div class="app">
+    <Nav />
+    <transition
+      mode="out-in"
+      enter-active-class="animate__animated animate__fadeIn"
+      leave-active-class="animate__animated animate__fadeOut"
+    >
+      <router-view />
+    </transition>
+  </div>
 </template>
       
 <script>
-import Nav from './components/Nav'
+import Nav from "./components/Nav";
 
-export default{
-  name: 'App',
-  components: { 
-    Nav
-  }
-}
-
-  </script>
+export default {
+  name: "App",
+  components: {
+    Nav,
+  },
+};
+</script>
 
 
 <style>
@@ -44,9 +44,9 @@ export default{
 */
 #nav a.router-link-exact-active {
   color: #42b983;
-} 
+}
 ::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 #app {
   overflow: hidden;
