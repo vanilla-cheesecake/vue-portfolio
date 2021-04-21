@@ -1,11 +1,10 @@
 <template>
-  <div class="app">
-    <Nav />
-    <transition
-      mode="out-in"
-      enter-active-class="animate__animated animate__fadeIn"
-      leave-active-class="animate__animated animate__fadeOut"
-    >
+  <div class="absolute bg-fixed">
+    <img class="h-screen w-screen" src="../src/assets/background.jpg" alt="" />
+  </div>
+  <Nav />
+  <div class="relative">
+    <transition enter-active-class="animate__animated animate__fadeIn">
       <router-view />
     </transition>
   </div>
@@ -13,11 +12,13 @@
       
 <script>
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Nav,
+    Footer,
   },
 };
 </script>
@@ -31,24 +32,29 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+*/
 
 #nav {
   padding: 30px;
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
-*/
+
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #3b82f6;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #3b82f6;
 }
 ::-webkit-scrollbar {
   width: 0 !important;
 }
 #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
   overflow: hidden;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
