@@ -1,29 +1,19 @@
 <template>
-  <div class="absolute bg-fixed">
+  <!-- <div class="absolute bg-fixed">
     <img
       class="h-screen w-screen home-img"
       src="../src/assets/background.jpg"
       alt=""
     />
-  </div>
+  </div> -->
 
-  <div class="relative">
-    <transition enter-active-class="animate__animated animate__fadeIn">
-      <router-view />
-    </transition>
-  </div>
+  <router-view />
 </template>
       
 <script>
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-
 export default {
   name: "App",
-  components: {
-    Nav,
-    Footer,
-  },
+  components: {},
 };
 </script>
 
@@ -39,20 +29,21 @@ export default {
 */
 /* .home-img {
 } */
-
-#nav {
+body {
+}
+/* #nav {
   padding: 30px;
 }
 
 #nav a {
   color: white;
-}
+} */
 
-#nav a.router-link-exact-active {
+/* #nav a.router-link-exact-active {
   color: #3b82f6;
   padding-bottom: 1px;
   border-bottom: 2px solid #3b82f6;
-}
+} */
 ::-webkit-scrollbar {
   width: 0 !important;
 }
