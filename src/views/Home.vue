@@ -222,21 +222,8 @@ export default {
   border-bottom: 2px solid #3b82f6;
 }
 .home-bg {
-  background-image: linear-gradient(
-    to bottom,
-    #0c0c11,
-    #121221,
-    #141630,
-    #16193f,
-    #191c4f,
-    #23245a,
-    #2e2c65,
-    #383570,
-    #494678,
-    #595880,
-    #6a6a87,
-    #7c7c8e
-  );
+  background-size: cover;
+  background-image: url(../../src/assets/background1.webp);
 }
 .about-bg {
   background-image: linear-gradient(
