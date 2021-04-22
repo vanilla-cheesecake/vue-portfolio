@@ -1,5 +1,7 @@
 # vue-portfolio
 
+See live -> https://golez.netlify.app/
+
 ## Project setup
 ```
 npm install
