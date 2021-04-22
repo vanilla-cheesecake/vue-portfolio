@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="left-0 bottom-0 w-full">
+    <footer class="left-0 bottom-0 w-full bg-black">
       <div class="flex border h-6 justify-center space-x-9">
         <section class="">
           <h1 class="text-1xl">golez.sf@gmail.com</h1>

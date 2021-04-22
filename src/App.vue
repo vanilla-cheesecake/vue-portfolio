@@ -6,7 +6,7 @@
       alt=""
     />
   </div>
-  <Nav />
+
   <div class="relative">
     <transition enter-active-class="animate__animated animate__fadeIn">
       <router-view />

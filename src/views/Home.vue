@@ -1,6 +1,20 @@
 <template>
-  <div class="">
-    <div class="container mx-auto mt-32 mb-96">
+  <div class="" id="home">
+    <!-- NAVBAR -->
+    <div id="nav" class="flex justify-end relative w-full z-40">
+      <div class="fixed mt-9 top-0 pr-16">
+        <nav class="font-medium">
+          <ul class="block font-medium">
+            <a class="m-3 btn-active" @click="scrollTo('home')">Home</a>
+            <a class="m-3 btn-active" @click="scrollTo('about')">about</a>
+            <a class="m-3 btn-active" @click="scrollTo('projects')">projects</a>
+            <a class="m-3 btn-active" @click="scrollTo('contact')">contact</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- END NABVAR -->
+    <div class="container mx-auto mt-32 mb-64">
       <!-- HOME SECTIION -->
       <div class="flex flex-col">
         <section class="mx-auto justify-center">
@@ -40,32 +54,96 @@
     <!-- END HOME SECTIION -->
 
     <!-- ABOUT SECTIION -->
-    <div id="about" class="relative">
+    <div id="about" class="relative flex bg-gray-500 w-full h-screen">
       <div class="row">
-        <div class="container h-screen">
-          <section class="w-full mt-96 mb-12">
-            <div class="bg-blue-500">
+        <div class="flex flex-col">
+          <section class="mx-auto flex w-full">
+            <div class="">
+              <h1 class="text-9xl justify-center font-black">ABOUT ME</h1>
+              <div class="justify-center flex-wrap">
+                <p>
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT SECTION -->
+    <!-- PROJECTS SECTIION -->
+    <div id="projects" class="relative bg-black">
+      <div class="row justify-center">
+        <div class="container h-screen w-full">
+          <section class="">
+            <div class="flex flex-col mx-auto">
+              <h1 class="text-9xl font-black text-blue-500 justify-center">
+                MY PROJECTS
+              </h1>
+            </div>
+            <div class="">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                porro excepturi veniam quisquam reprehenderit obcaecati corporis
-                vero repellendus est laboriosam, labore saepe! Expedita
-                necessitatibus, dolorem minima optio repudiandae officia quos?
-                Saepe, totam enim nisi necessitatibus nihil sit animi, minima
-                eius provident dicta accusantium tempora corporis blanditiis
-                deserunt quos recusandae fugit voluptatem quia delectus, odit
-                consequuntur eos. Aliquam accusamus expedita voluptate quibusdam
-                unde corrupti? Repellendus dolor beatae porro doloribus, illo
-                excepturi. Dolor, hic cupiditate. Eveniet illum, dicta esse quam
-                amet fugiat velit voluptates repudiandae voluptatem. Architecto
-                voluptatem reprehenderit adipisci quibusdam? Possimus soluta
-                illo, omnis pariatur tempora voluptatem quidem perspiciatis. Ex,
-                perferendis!
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
               </p>
             </div>
           </section>
         </div>
       </div>
     </div>
+    <!-- END PROJECTS SECTION -->
+    <!-- CONTACS SECTIION -->
+    <div id="contact" class="relative bg-gray-500">
+      <div class="row">
+        <div class="container h-screen">
+          <section class="w-full">
+            <div class="flex flex-col mx-auto justify-center">
+              <h1 class="text-9xl text-9xl font-black justify-center">
+                CONTACT ME
+              </h1>
+              <div class="justify-center">
+                <p>
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                  GOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZGOLEZ
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACTS SECTION -->
   </div>
   <Footer />
 </template>
@@ -82,6 +160,16 @@ export default {
     Social,
     Footer,
   },
+  data() {
+    return {
+      view: {
+        atTopOfPage: true,
+      },
+    };
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
   methods: {
     // SCROLL MAGIC SLIDE, I'm stupid and noob so it took me 2 solid days to figure this out
     // nah took me 2 days to find on google
@@ -92,7 +180,6 @@ export default {
         block: "start",
       });
     },
-    // the function to call when the user scrolls, added as a method
     handleScroll() {
       // when the user scrolls, check the pageYOffset
       if (window.pageYOffset > 0) {
