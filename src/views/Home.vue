@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="container mx-auto mt-32 mb-12">
+    <div class="container mx-auto mt-32 mb-96">
       <!-- HOME SECTIION -->
       <div class="flex flex-col">
         <section class="mx-auto justify-center">
@@ -20,7 +20,9 @@
           <div
             class="transform border p-2 w-28 rounded-xl transition duration-100 hover:scale-105"
           >
-            <button class="focus:outline-none">About me</button>
+            <button class="focus:outline-none" @click="scrollTo('about')">
+              About me
+            </button>
           </div>
           <div
             class="transform border p-2 w-28 rounded-xl transition duration-100 hover:scale-105"
@@ -39,25 +41,30 @@
 
     <!-- ABOUT SECTIION -->
     <div id="about" class="relative">
-      <section class="w-full mt-96 mb-12">
-        <div class="bg-blue-500">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non porro
-            excepturi veniam quisquam reprehenderit obcaecati corporis vero
-            repellendus est laboriosam, labore saepe! Expedita necessitatibus,
-            dolorem minima optio repudiandae officia quos? Saepe, totam enim
-            nisi necessitatibus nihil sit animi, minima eius provident dicta
-            accusantium tempora corporis blanditiis deserunt quos recusandae
-            fugit voluptatem quia delectus, odit consequuntur eos. Aliquam
-            accusamus expedita voluptate quibusdam unde corrupti? Repellendus
-            dolor beatae porro doloribus, illo excepturi. Dolor, hic cupiditate.
-            Eveniet illum, dicta esse quam amet fugiat velit voluptates
-            repudiandae voluptatem. Architecto voluptatem reprehenderit adipisci
-            quibusdam? Possimus soluta illo, omnis pariatur tempora voluptatem
-            quidem perspiciatis. Ex, perferendis!
-          </p>
+      <div class="row">
+        <div class="container h-screen">
+          <section class="w-full mt-96 mb-12">
+            <div class="bg-blue-500">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                porro excepturi veniam quisquam reprehenderit obcaecati corporis
+                vero repellendus est laboriosam, labore saepe! Expedita
+                necessitatibus, dolorem minima optio repudiandae officia quos?
+                Saepe, totam enim nisi necessitatibus nihil sit animi, minima
+                eius provident dicta accusantium tempora corporis blanditiis
+                deserunt quos recusandae fugit voluptatem quia delectus, odit
+                consequuntur eos. Aliquam accusamus expedita voluptate quibusdam
+                unde corrupti? Repellendus dolor beatae porro doloribus, illo
+                excepturi. Dolor, hic cupiditate. Eveniet illum, dicta esse quam
+                amet fugiat velit voluptates repudiandae voluptatem. Architecto
+                voluptatem reprehenderit adipisci quibusdam? Possimus soluta
+                illo, omnis pariatur tempora voluptatem quidem perspiciatis. Ex,
+                perferendis!
+              </p>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
   </div>
   <Footer />
@@ -74,6 +81,17 @@ export default {
     qoutes: Qoutes,
     Social,
     Footer,
+  },
+  methods: {
+    // SCROLL MAGIC SLIDE, I'm noob so took me 2 solid days to figure this out
+    // nah took me 2 days to find on google
+    scrollTo(element) {
+      const el = document.querySelector("#" + element);
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    },
   },
 };
 </script>
