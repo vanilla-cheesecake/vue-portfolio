@@ -1,6 +1,10 @@
 <template>
   <div class="absolute bg-fixed">
-    <img class="h-screen w-screen" src="../src/assets/background.jpg" alt="" />
+    <img
+      class="h-screen w-screen home-img"
+      src="../src/assets/background.jpg"
+      alt=""
+    />
   </div>
   <Nav />
   <div class="relative">
@@ -33,6 +37,8 @@ export default {
   color: #2c3e50;
 }
 */
+/* .home-img {
+} */
 
 #nav {
   padding: 30px;

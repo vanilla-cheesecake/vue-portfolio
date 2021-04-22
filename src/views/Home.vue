@@ -83,7 +83,7 @@ export default {
     Footer,
   },
   methods: {
-    // SCROLL MAGIC SLIDE, I'm noob so took me 2 solid days to figure this out
+    // SCROLL MAGIC SLIDE, I'm stupid and noob so it took me 2 solid days to figure this out
     // nah took me 2 days to find on google
     scrollTo(element) {
       const el = document.querySelector("#" + element);
@@ -91,6 +91,17 @@ export default {
         behavior: "smooth",
         block: "start",
       });
+    },
+    // the function to call when the user scrolls, added as a method
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false;
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true;
+      }
     },
   },
 };
