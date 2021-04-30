@@ -3,20 +3,22 @@
     <!-- NAVBAR -->
     <div class="home-bg h-screen">
       <div id="nav" class="flex block justify-end relative w-full z-40">
-        <div class="fixed block mt-56 top-0 pr-16">
+        <div
+          class="fixed block mt-56 top-0 pr-16 animate__animated animate__fadeInRight animate__delay-2s"
+        >
           <nav id="nav" class="">
             <ul class="space-y-6">
               <li class="m-3">
-                <a @click="scrollTo('home')">home</a>
+                <a @click="scrollTo('home')">Home</a>
               </li>
               <li class="m-3">
-                <a @click="scrollTo('about')">about</a>
+                <a @click="scrollTo('about')">About</a>
               </li>
               <li class="m-3">
-                <a @click="scrollTo('projects')">projects</a>
+                <a @click="scrollTo('projects')">Projects</a>
               </li>
               <li class="m-3">
-                <a @click="scrollTo('contact')">contact</a>
+                <a @click="scrollTo('contact')">Contact</a>
               </li>
             </ul>
           </nav>
@@ -57,7 +59,7 @@
               </div>
             </div>
             <div
-              class="flex justify-start absolute p-16 animate__animated animate__fadeInLeft animate__delay-2s"
+              class="flex block justify-center absolute p-16 animate__animated animate__fadeInLeft animate__delay-2s"
             >
               <Social class="space-y-6 animate-pulse" />
             </div>
@@ -223,7 +225,22 @@ export default {
 }
 .home-bg {
   background-size: cover;
-  background-image: url(../../src/assets/background1.webp);
+  /* background-image: url(../../src/assets/background1.webp); */
+  background-image: linear-gradient(
+    to right top,
+    #6c6687,
+    #5f597a,
+    #534c6d,
+    #474060,
+    #3b3454,
+    #373354,
+    #323353,
+    #2d3253,
+    #2e3c5e,
+    #2e4768,
+    #2f5171,
+    #305c7a
+  );
 }
 .about-bg {
   background-image: linear-gradient(
